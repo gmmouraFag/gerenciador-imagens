@@ -1,0 +1,13 @@
+:root { font-family: Inter, Arial, sans-serif; color: #1f2937; background: #f3f6fb; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1000px; margin: 0 auto; padding: 48px 24px; }
+header { margin-bottom: 28px; } h1 { margin: 0 0 8px; color: #12325b; } h2 { margin-top: 0; font-size: 1.2rem; }
+.card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 5px 18px #193a5b14; }
+form, .section-title { display: flex; align-items: center; gap: 14px; justify-content: space-between; }
+input[type=file] { flex: 1; border: 1px solid #d4dce8; padding: 10px; border-radius: 7px; }
+button { border: 0; border-radius: 7px; background: #1665d8; color: white; padding: 10px 15px; font-weight: 600; cursor: pointer; } button:disabled { opacity: .6; cursor: wait; }
+button.secondary { background: #e7eef9; color: #174477; } .message { margin: 16px 0 0; color: #174477; }
+.table-wrap { overflow-x: auto; } table { width: 100%; border-collapse: collapse; } th, td { text-align: left; padding: 13px 10px; border-bottom: 1px solid #e5eaf2; } th { color: #536477; font-size: .82rem; text-transform: uppercase; }
+.modal-backdrop { position: fixed; inset: 0; padding: 24px; display: grid; place-items: center; background: #0c1d30aa; } .modal { position: relative; width: min(720px, 100%); max-height: 90vh; overflow: auto; background: white; padding: 25px; border-radius: 12px; } .modal img { max-width: 100%; max-height: 68vh; display: block; margin: auto; object-fit: contain; } .close { position: absolute; right: 12px; top: 10px; font-size: 24px; padding: 0 9px; }
+@media (max-width: 620px) { main { padding: 28px 14px; } form { align-items: stretch; flex-direction: column; } }
